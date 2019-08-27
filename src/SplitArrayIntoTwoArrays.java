@@ -3,7 +3,9 @@ import java.util.ArrayList;
 /**
  * This script assigns load into to two servers. It tries to have as similar
  * load as possible on each server. The time complexity is O(n^2). It should be
- * improved in the future.
+ * improved in the future. This method is not correct! It has problems detecting
+ * that the sum of two numbers can be replaced with another number from the
+ * other server.
  * 
  * @author Marios
  *
@@ -18,6 +20,7 @@ public class SplitArrayIntoTwoArrays {
 		int[] E = { 20, 20, 19, 10, 5, 6, 7, 13 };
 		int[] F = { 20, 20, 19, 10, 8, 6, 13 };
 		int[] G = { 1, 20, 5, 10, 20, 10, 2, 4 };
+		int[] H = { 11, 7, 40, 19, 50, 5, 30 }; // Problematic case
 		splitArray(A);
 		splitArray(B);
 		splitArray(C);
@@ -25,6 +28,7 @@ public class SplitArrayIntoTwoArrays {
 		splitArray(E);
 		splitArray(F);
 		splitArray(G);
+		splitArray(H);
 	}
 
 	public static void splitArray(int[] A) {

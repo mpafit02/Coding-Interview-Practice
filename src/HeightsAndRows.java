@@ -20,6 +20,11 @@ public class HeightsAndRows {
 
 	}
 
+	/**
+	 * Finds and returns just the heights of the tallest in each row and the numbr of rows
+	 * @param A
+	 * @return
+	 */
 	public static int findHeights(int[] A) {
 		System.out.println("\nAnother way if we don't care who is in the rows and we just want the number of rows.");
 		int max = 0;
@@ -34,6 +39,11 @@ public class HeightsAndRows {
 		return rows;
 	}
 
+	/**
+	 * Finds the detailed rows
+	 * @param A
+	 * @return
+	 */
 	public static int findHeightsAndRows(int[] A) {
 		ArrayList<Integer> min = new ArrayList<>();
 		ArrayList<ArrayList<Integer>> rows = new ArrayList<>();

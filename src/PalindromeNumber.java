@@ -20,13 +20,14 @@
  * 
  * 
  * Time Complexity O(N) where N is the number of digits of the integer.
+ * 
  * @author Marios
  *
  */
 public class PalindromeNumber {
 
 	public static boolean isPalindrome(int x) {
-		if (x < 0) {
+		if (x < 0 || (x % 10 == 0 && x != 0)) {
 			return false;
 		}
 		int reverse = 0;
